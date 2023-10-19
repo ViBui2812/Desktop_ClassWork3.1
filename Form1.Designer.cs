@@ -40,7 +40,6 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.chbBinhphuong = new System.Windows.Forms.CheckBox();
             this.chbLamtron = new System.Windows.Forms.CheckBox();
-            this.chbDele = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
@@ -86,6 +85,7 @@
             this.btnTinh.TabIndex = 4;
             this.btnTinh.Text = "Tính";
             this.btnTinh.UseVisualStyleBackColor = true;
+            this.btnTinh.Click += new System.EventHandler(this.btnTinh_Click);
             // 
             // rbtnCong
             // 
@@ -109,6 +109,7 @@
             this.rbtnTru.TabStop = true;
             this.rbtnTru.Text = "Trừ";
             this.rbtnTru.UseVisualStyleBackColor = true;
+            this.rbtnTru.CheckedChanged += new System.EventHandler(this.rbtnTru_CheckedChanged);
             // 
             // rbtnNhan
             // 
@@ -120,6 +121,7 @@
             this.rbtnNhan.TabStop = true;
             this.rbtnNhan.Text = "Nhân";
             this.rbtnNhan.UseVisualStyleBackColor = true;
+            this.rbtnNhan.CheckedChanged += new System.EventHandler(this.rbtnNhan_CheckedChanged);
             // 
             // rbtnChia
             // 
@@ -131,6 +133,7 @@
             this.rbtnChia.TabStop = true;
             this.rbtnChia.Text = "Chia";
             this.rbtnChia.UseVisualStyleBackColor = true;
+            this.rbtnChia.CheckedChanged += new System.EventHandler(this.rbtnChia_CheckedChanged);
             // 
             // listBox1
             // 
@@ -150,6 +153,7 @@
             this.chbBinhphuong.TabIndex = 10;
             this.chbBinhphuong.Text = "Bình phương KQ";
             this.chbBinhphuong.UseVisualStyleBackColor = true;
+            this.chbBinhphuong.CheckedChanged += new System.EventHandler(this.chbBinhphuong_CheckedChanged);
             // 
             // chbLamtron
             // 
@@ -160,16 +164,7 @@
             this.chbLamtron.TabIndex = 11;
             this.chbLamtron.Text = "Làm tròn KQ";
             this.chbLamtron.UseVisualStyleBackColor = true;
-            // 
-            // chbDele
-            // 
-            this.chbDele.AutoSize = true;
-            this.chbDele.Location = new System.Drawing.Point(371, 233);
-            this.chbDele.Name = "chbDele";
-            this.chbDele.Size = new System.Drawing.Size(60, 20);
-            this.chbDele.TabIndex = 12;
-            this.chbDele.Text = "Để lẻ";
-            this.chbDele.UseVisualStyleBackColor = true;
+            this.chbLamtron.CheckedChanged += new System.EventHandler(this.chbLamtron_CheckedChanged);
             // 
             // label3
             // 
@@ -198,7 +193,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.chbDele);
             this.Controls.Add(this.chbLamtron);
             this.Controls.Add(this.chbBinhphuong);
             this.Controls.Add(this.listBox1);
@@ -231,7 +225,6 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.CheckBox chbBinhphuong;
         private System.Windows.Forms.CheckBox chbLamtron;
-        private System.Windows.Forms.CheckBox chbDele;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
     }
